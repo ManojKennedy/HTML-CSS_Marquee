@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee</title>
+    <style>
+        .crowtag{
+            position: absolute;
+        }
+        .crow{
+            
+            margin-top: 70px;
+        }
+        .crow1{
+            
+            margin-top: 340px;
+        }
+        .crow2{
+            
+            margin-top: 600px;
+        }
+        @keyframes color-animation {
+            0% {
+            background: rgb(0, 132, 255);
+            } 
+            100% {
+            background: rgb(3, 5, 41);
+            } 
+        }
+        .backgrnd{
+            animation: color-animation 20s infinite linear alternate;
+        }
+        .cloud{
+            height: 100%;
+            width: 100%;
+        }
+        @keyframes sun {
+            0%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        .sun{
+            animation: sun 20s infinite ease alternate;
+            width: 200px;
+            height: 200px;
+            margin-top: 30px;
+
+        }
+        @keyframes moon {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .moon{
+            animation: moon 20s infinite ease alternate;
+            width: 200px;
+            height: 200px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body class="backgrnd">
+    <div>
+        <marquee class="crowtag"><img class="sun" src="sun.png"></marquee>
+        <marquee class="crowtag"><img class="moon" src="pixel-art-moon-crescent-moon-vector-icon-8bit-game-white-background_360488-480-fotor-bg-remover-2023112220625.png"></marquee>
+        <marquee class="crowtag" behavior="scroll" direction="left" scrollamount="50"><img src="c3.png" style="margin-top: 200px;" height="73%" width="73%"> </marquee>
+        <marquee class="crowtag" behavior="scroll" direction="left" scrollamount="40"><img style="margin-top: -50px;" height="73%" width="73%" src="c3.png"> </marquee>
+        <marquee class="crowtag" behavior="scroll" direction="left" scrollamount="30"><img src="c3.png" style="margin-top: 220px;" height="73%" width="73%"> </marquee>
+        <marquee class="crowtag" behavior="scroll" direction="left" scrollamount="20"><img style="margin-top: -50px;" height="73%" width="73%" src="c3.png"> </marquee>
+        <marquee class="crowtag" behavior="scroll" direction="left" scrollamount="10"><img class="cloud" src="c3.png"> </marquee>
+        <marquee class="crowtag" behavior="scroll" direction="left" scrollamount="15"><img class="cloud" src="c3.png"> </marquee>
+        <marquee class="crowtag" behavior="scroll" direction="left" scrollamount="25"><img class="cloud" src="c3.png"> </marquee>
+        <marquee class="crowtag" behavior="scroll" direction="left" scrollamount="35"><img class="cloud" src="c3.png"> </marquee>
+        <marquee class="crowtag" behavior="scroll" direction="right" scrollamount="12" height="700" width="1520"><img  class="crow" src="1663288.gif" height="100px" width="100px"></marquee>
+        <marquee class="crowtag" behavior="scroll" direction="right" scrollamount="8" height="700" width="1520" ><img  class="crow1" src="1663288.gif" height="100px" width="100px"></marquee>
+        <marquee class="crowtag" behavior="scroll" direction="right" scrollamount="5" height="700" width="1520"><img  class="crow2" src="1663288.gif" height="100px" width="100px"></marquee>
+        <marquee behavior="scroll" direction="right" height="700" width="1520" scrollamount="20">
+            <img src="flights.png" height="700px" width="900px" style=" transform: rotate(90deg);">
+        </marquee>
+    </div>
+    
+    
+</body>
+</html>
